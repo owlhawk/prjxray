@@ -4,7 +4,7 @@ TILEGRID_TDB_DEPENDENCIES=
 TILEGRID_TDB_DEPENDENCIES += iob/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += iob_int/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += ioi/build/segbits_tilegrid.tdb
-TILEGRID_TDB_DEPENDENCIES += monitor/build/segbits_tilegrid.tdb
+#TILEGRID_TDB_DEPENDENCIES += monitor/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += bram/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += bram_block/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += bram_int/build/segbits_tilegrid.tdb
@@ -14,7 +14,7 @@ TILEGRID_TDB_DEPENDENCIES += cfg/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += dsp/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += fifo_int/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += cfg_int/build/segbits_tilegrid.tdb
-TILEGRID_TDB_DEPENDENCIES += monitor_int/build/segbits_tilegrid.tdb
+#TILEGRID_TDB_DEPENDENCIES += monitor_int/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += clk_hrow/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += clk_bufg/build/segbits_tilegrid.tdb
 TILEGRID_TDB_DEPENDENCIES += hclk_cmt/build/segbits_tilegrid.tdb
@@ -79,11 +79,11 @@ pll/build/segbits_tilegrid.tdb: build/basicdb/tilegrid.json
 ps7_int/build/segbits_tilegrid.tdb: build/basicdb/tilegrid.json
 	cd ps7_int && $(MAKE)
 
-monitor/build/segbits_tilegrid.tdb: build/basicdb/tilegrid.json
-	cd monitor && $(MAKE)
+#monitor/build/segbits_tilegrid.tdb: build/basicdb/tilegrid.json
+#	cd monitor && $(MAKE)
 
-monitor_int/build/segbits_tilegrid.tdb: build/basicdb/tilegrid.json
-	cd monitor_int && $(MAKE)
+#monitor_int/build/segbits_tilegrid.tdb: build/basicdb/tilegrid.json
+#	cd monitor_int && $(MAKE)
 
 bram/build/segbits_tilegrid.tdb: build/basicdb/tilegrid.json
 	cd bram && $(MAKE)

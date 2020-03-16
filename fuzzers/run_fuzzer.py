@@ -288,8 +288,11 @@ def mem_convert(s):
     """
     units = {
         'G': 1e9,
+        'Gi':1e9,
         'M': 1e6,
+        'Mi':1e6,
         'K': 1e3,
+        'Ki':1e3,
         'B': 1,
     }
     u = '',

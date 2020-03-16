@@ -16,6 +16,7 @@ set_property CFGBVS VCCO [current_design]
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 set_property BITSTREAM.GENERAL.PERFRAMECRC YES [current_design]
 set_param tcl.collectionResultDisplayLimit 0
+set_param place.sliceLegEffortLimit 2000
 
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF]
 

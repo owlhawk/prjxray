@@ -400,6 +400,8 @@ def propagate_IOI_Y9(database, tiles_by_grid):
         tiles = ['RIOI3_X43Y9', 'LIOI3_X0Y9']
     elif arch in 'kintex7':
         tiles = ['LIOI3_X0Y9']
+    elif arch in 'spartan7':
+        tiles = ['RIOI3_X27Y9', 'LIOI3_X0Y9']
     elif arch in 'zynq7':
         tiles = ['RIOI3_X31Y9']
     else:
